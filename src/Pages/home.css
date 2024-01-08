@@ -1,16 +1,24 @@
 body{
-    font-family: 'Roboto', sans-serif;
     background-color: #010114;
     color: #fff;
-    /* display: flex;
-    justify-content: space-around;
-    align-items: center; */
 }
 
-section{
+.presentation-about__container{
     height: 100vh;
     width: 100%;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+.presentation{
+    width: 45%;
+    height: 80%;
+}
+
+.about{
+    width: 45%;
+    height: 90%;
+    background-color: aquamarine;
 }

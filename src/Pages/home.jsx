@@ -4,7 +4,7 @@ import Presentation from "../Components/Presentation/presentation";
 
 const Home = () => {
     return(
-        <section>
+        <section className="presentation-about__container">
             <Presentation/>
         </section>
         
