@@ -1,0 +1,51 @@
+.formation{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.formation:hover  .section__title{
+    color: #4e7cfc;
+    transition: 0.3s ease;
+}
+
+.section__title{
+    font-size: 28px;
+    font-weight: 700;
+    color: #213670;
+}
+
+
+.card__container{
+    height: 45%;
+    width: 80%;
+    border: 2px solid #4e7cfc;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 12px;
+    height: 100%;
+    width: 100%;
+}
+
+.formation__name{
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.formation__img{
+    width: 100%;
+    height: 90%;
+}

@@ -10,15 +10,26 @@ body{
     justify-content: space-around;
     align-items: center;
     font-family: 'Roboto', sans-serif;
+    position: relative;
+    overflow: hidden;
 }
 
 .presentation{
     width: 45%;
     height: 80%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1; 
 }
 
 .about{
     width: 45%;
-    height: 90%;
-    background-color: aquamarine;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    overflow-y: scroll;
+    padding-left: 5%;
+    z-index: 0;
 }
