@@ -2,7 +2,7 @@ import "./formations.css";
 
 const Formation = () => {
   return (
-    <section className="formation" id="#formation">
+    <section className="formation" id="formation">
         <h1 className="section__title">Formation</h1>
       <div className="card__container">
         <div className="card">

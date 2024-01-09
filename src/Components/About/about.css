@@ -1,0 +1,12 @@
+.about{
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    overflow-y: scroll;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    margin: 12px 0px;
+    z-index: 0;
+}
