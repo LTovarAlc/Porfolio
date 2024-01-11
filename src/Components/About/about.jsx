@@ -5,7 +5,7 @@ import "./about.css"
 import React from "react"
 
 const About = () => {
-    return<section className="about">
+    return<section className="about" id="about">
         <Formation/>
         <Skills/>
         <Projects/>

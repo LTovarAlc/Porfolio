@@ -34,13 +34,12 @@
     font-weight: 700;
     display: flex;
     justify-content: space-evenly;
-    width: 40%;
     height: 10%;
     align-items: center;
 }
 
 .project__name:hover{
-    text-decoration: underline;
+    border-bottom: 1px #4e7cfc solid;
 }
 
 .project__img{
@@ -62,6 +61,7 @@
 }
 
 .redi{
+    margin-left: 10px;
     height: 15px;
     filter: invert(100%);
 }

@@ -3,6 +3,16 @@ import React from "react";
 import Menu from "../menu/menu";
 
 const Presentation = () => {
+
+  const scrollToSection = (id) => {
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({
+        behavior: "smooth",
+      });
+    }
+  };
+
   return (
     <>
       <div className="presentation">
@@ -21,7 +31,7 @@ const Presentation = () => {
           </p>
         </div>
         <div className="menu__container">
-          <Menu/>
+          <Menu scrollToSection={scrollToSection}/>
         </div>
         <div className="buttons__container">
           <a href="https://www.linkedin.com/in/ltovardev/" target="_blank"><img src="../../img/linkedin-black.png" alt="" className="socialmedia__icon" /></a>
