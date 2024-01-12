@@ -3,9 +3,10 @@ import Projects from "../Projects/projects"
 import Skills from "../Skills/skills"
 import "./about.css"
 import React from "react"
+import 'animate.css'
 
 const About = () => {
-    return<section className="about" id="about">
+    return<section className="about animate__animated animate__slideInRight animate__delay-3s" id="about">
         <Formation/>
         <Skills/>
         <Projects/>

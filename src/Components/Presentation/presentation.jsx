@@ -1,6 +1,7 @@
 import "./presentation.css";
 import React from "react";
 import Menu from "../menu/menu";
+import 'animate.css'
 
 const Presentation = () => {
 
@@ -15,7 +16,7 @@ const Presentation = () => {
 
   return (
     <>
-      <div className="presentation">
+      <div className="presentation animate__animated animate__slideInLeft animate__delay-1s">
         <div className="avatar-greeting__container">
           <img src="../../img/avatar.png" alt="Avatar" className="Avatar" />
           <div className="greeting">
@@ -31,10 +32,10 @@ const Presentation = () => {
             everyone, I hope to be in contact soon!
           </p>
         </div>
-        <div className="menu__container">
+        <div className="menu__container animate__animated animate__zoomIn animate__delay-2s">
           <Menu scrollToSection={scrollToSection}/>
         </div>
-        <div className="buttons__container">
+        <div className="buttons__container animate__animated animate__zoomIn animate__delay-2s">
           <a href="https://www.linkedin.com/in/ltovardev/" target="_blank"><img src="../../img/linkedin-black.png" alt="" className="socialmedia__icon" /></a>
           <a href="https://github.com/LTovarAlc" target="_blank"><img src="../../img/GitHub-black.png" alt="" className="socialmedia__icon" /></a>
           <a href="#" target="_blank"><img src="../../img/instagram-black.png" alt="" className="socialmedia__icon" /></a>
