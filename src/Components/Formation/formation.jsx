@@ -16,12 +16,12 @@ const Formation = () => {
       </div>
       <div className="card__container">
         <div className="card">
-          <h2 className="formation__name">Edec University</h2>
-          <h3 className="formation__specialitation">Computer Technology Engineerig</h3>
+          <h2 className="formation__name">Alura LATAM</h2>
+          <h3 className="formation__specialitation">FrontEnd Development</h3>
           <div className="formation__img-container">
-            <img src="../../img/edecBanner.png" alt="Edec University" className="formation__img"/>
+            <img src="../../img/aluralatamBanner.png" alt="Edec University" className="formation__img"/>
           </div>
-          <span className="formation__duration">2022 - 2024</span>
+          <span className="formation__duration">2023</span>
         </div>
       </div>
     </section>

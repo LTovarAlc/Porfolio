@@ -21,13 +21,14 @@
 
 .card__container{
     height: 40%;
-    width: 70%;
+    width: 60%;
     border: 2px solid #4e7cfc;
     border-radius: 8px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    background-color: rgba(78, 124, 252, 0.01);
 }
 
 .card{
@@ -48,4 +49,10 @@
 .formation__img{
     width: 100%;
     height: 90%;
+}
+
+.formation__img-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
