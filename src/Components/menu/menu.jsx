@@ -12,7 +12,7 @@ const Menu = ({scrollToSection}) => {
     <li><a href="#formation" onClick={(e) => handleClick("formation", e)}>Formation</a></li>
     <li><a href="#skills" onClick={(e) => handleClick("skills", e)}>Skills</a></li>
     <li><a href="#projects" onClick={(e) => handleClick("projects", e)}>Projects</a></li>
-    <li><a href="">Contact</a></li>
+    <li><a href="#contact" onClick={(e) => handleClick("contact", e)}>Contact</a></li>
   </ul>
 }
 
