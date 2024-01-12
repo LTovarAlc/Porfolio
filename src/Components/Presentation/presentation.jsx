@@ -24,8 +24,9 @@ const Presentation = () => {
           </div>
         </div>
         <div className="description">
+          <h3>I´m Luis Tovar, nice to meet you!</h3>
           <p>
-            My name is Luis Tovar, nice to meet you!<br /> <br /> I specialize in
+            I specialize in
             frontend development and I love creating websites accessible to
             everyone, I hope to be in contact soon!
           </p>
