@@ -8,7 +8,7 @@ const Menu = ({scrollToSection}) => {
     scrollToSection(id);
   };
 
-    return<ul class="nav">
+    return<ul className="nav">
     <li><a href="#formation" onClick={(e) => handleClick("formation", e)}>Formation</a></li>
     <li><a href="#skills" onClick={(e) => handleClick("skills", e)}>Skills</a></li>
     <li><a href="#projects" onClick={(e) => handleClick("projects", e)}>Projects</a></li>
