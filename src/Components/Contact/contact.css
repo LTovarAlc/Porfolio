@@ -53,3 +53,18 @@ input:focus{
     transition: 0.3s ease;
     border: 1px #4e7cfc solid;
 }
+
+textarea{
+    padding: 12px 12px;
+    color: #fff;
+    background-color: transparent;
+    border: 1px #213670 solid;
+    border-radius: 8px;
+    outline: none;
+    transition: border 0.3s ease;
+}
+
+textarea:focus{
+    transition: 0.3 ease;
+    border: 1px #4e7cfc solid;
+}
