@@ -1,51 +1,53 @@
 import "./contact.css";
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
+import emailjs from '@emailjs/browser';
 
 const Contact = () => {
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    message: "",
-  });
+  const form = useRef();
+  const [message, setMessage] = useState(null);
 
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData((prevData) => ({
-      ...prevData,
-      [name]: value,
-    }));
-  };
-
-  const handleSubmit = (e) => {
+  const sendEmail = (e) => {
     e.preventDefault();
-    console.log("Form Data: ", formData);
+
+    emailjs.sendForm('service_mbglocp', 'template_3hziy2m', form.current, '4LYfef9_CkNTqHdv9')
+      .then((result) => {
+        console.log(result.text);
+        if (result.status === 200) {
+          // Mensaje de éxito
+          setMessage("Message sent successfully. I´ll contact you soon.");
+          // Limpiar los campos del formulario
+          form.current.reset();
+        } else {
+          // Mensaje de error
+          setMessage("Error sending the message. Please try again later.");
+        }
+      })
+      .catch((error) => {
+        console.log(error.text);
+        // Mensaje de error
+        setMessage("Error sending the message. Please try again later.");
+      });
   };
 
   return (
     <section className="contact" id="contact">
       <h1 className="section__title">Contact me!</h1>
       <div className="form__container">
-        <form action="" onSubmit={handleSubmit}>
+        <form ref={form} onSubmit={sendEmail}>
           <div className="input__container">
-            <label htmlFor="name">Name</label>
+            <label htmlFor="user_name">Name</label>
             <input
               type="text"
-              id="name"
-              name="name"
-              value={formData.name}
-              onChange={handleChange}
+              name="user_name"
               required
             />
           </div>
 
           <div className="input__container">
-            <label htmlFor="name">Email</label>
+            <label htmlFor="user_email">Email</label>
             <input
               type="email"
-              id="email"
-              name="email"
-              value={formData.email}
-              onChange={handleChange}
+              name="user_email"
               required
             />
           </div>
@@ -53,20 +55,17 @@ const Contact = () => {
           <div className="input__container">
             <label htmlFor="message">Message</label>
             <textarea
-              type="message"
-              id="message"
               name="message"
               rows="4"
-              value={formData.message}
-              onChange={handleChange}
               required
             ></textarea>
           </div>
-          
-        </form>
-        
-        <button onClick={handleSubmit} className="send">Send</button>
 
+          <button type="submit" className="send" value="Send">
+            Send
+          </button>
+        </form>
+        {message && <p className={message.includes("successfully") ? "success-message" : "error-message"}>{message}</p>}
       </div>
     </section>
   );
