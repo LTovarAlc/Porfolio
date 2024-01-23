@@ -31,10 +31,10 @@ const Presentation = () => {
             everyone, I hope to be in contact soon!
           </p>
         </div>
-        <div className="menu__container animate__animated animate__zoomIn animate__delay-2s">
+        <div className="menu__container">
           <Menu scrollToSection={scrollToSection}/>
         </div>
-        <div className="buttons__container animate__animated animate__zoomIn animate__delay-2s">
+        <div className="buttons__container">
           <a href="https://www.linkedin.com/in/ltovardev/" target="_blank"><img src="../../img/linkedin-black.png" alt="" className="socialmedia__icon" /></a>
           <a href="https://github.com/LTovarAlc" target="_blank"><img src="../../img/GitHub-black.png" alt="" className="socialmedia__icon" /></a>
           <a href="#" target="_blank"><img src="../../img/instagram-black.png" alt="" className="socialmedia__icon" /></a>
