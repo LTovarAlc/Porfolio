@@ -67,6 +67,9 @@ const Contact = () => {
         </form>
         {message && <p className={message.includes("successfully") ? "success-message" : "error-message"}>{message}</p>}
       </div>
+      {/* <p className="footer">
+      This portfolio was developed by me, Luis Tovar. <br /> Using React.js as the main tool, along with other tools such as AnimateCSS and MailJS.
+      </p> */}
     </section>
   );
 };
