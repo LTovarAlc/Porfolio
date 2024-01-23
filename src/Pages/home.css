@@ -1,23 +1,19 @@
 body{
     background-color: #010114;
     color: #fff;
-}
-
-.presentation-about__container{
-    height: 100vh;
     display: flex;
-    font-family: 'Roboto', sans-serif;
-    position: relative;
+    justify-content: center;
+    align-items: center;
     overflow: hidden;
 }
 
-.presentation{
-    width: 45%;
-    height: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 1; 
+.presentation-about__container{
+    height: 97vh;
+    width: 90vw;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .about::-webkit-scrollbar{

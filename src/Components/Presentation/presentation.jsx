@@ -15,7 +15,6 @@ const Presentation = () => {
   };
 
   return (
-    <>
       <div className="presentation animate__animated animate__slideInLeft animate__delay-1s">
         <div className="avatar-greeting__container">
           <img src="../../img/avatar.png" alt="Avatar" className="Avatar" />
@@ -42,7 +41,6 @@ const Presentation = () => {
           <a href="https://twitter.com/LTovarDev" target="_blank"><img src="../../img/x-black.png" alt="" className="socialmedia__icon" /></a>
         </div>
       </div>
-    </>
   );
 };
 
