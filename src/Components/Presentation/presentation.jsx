@@ -20,7 +20,7 @@ const Presentation = () => {
           <img src="../../img/avatar.png" alt="Avatar" className="Avatar" />
           <div className="greeting">
             <h1>Hi there!</h1>
-            <img src="../../img/saludo.png" alt="Greeting" />
+            <img src="../../img/saludo.png" alt="Greeting" className="greeting__emoji" />
           </div>
         </div>
         <div className="description">
