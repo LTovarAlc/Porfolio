@@ -7,6 +7,10 @@ body{
     overflow: hidden;
 }
 
+body:hover #trailer{
+    opacity: 0.2;
+}
+
 .presentation-about__container{
     height: 97vh;
     width: 90vw;
@@ -19,6 +23,22 @@ body{
 .about::-webkit-scrollbar{
     width: 0;
     display: none;
+}
+
+#trailer{
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    background: radial-gradient(circle, #4e7cfc, #3c61c5, #19337a, #060638, #010114);
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10000;
+
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 500ms ease;
 }
 
 @media screen and (max-width: 430px) {
