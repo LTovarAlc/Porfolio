@@ -169,3 +169,10 @@
         align-items: center;
     }
 }
+
+@media screen and (min-width: 431px) and (max-width: 768px) {
+    .presentation{
+        height: 40%;
+        width: 90%;
+    }
+}

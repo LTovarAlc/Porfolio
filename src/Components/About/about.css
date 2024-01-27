@@ -10,3 +10,10 @@
         width: 100%;
     }
 }
+
+@media screen and (min-width: 431px) and (max-width: 768px) {
+    .about{
+        height: 60%;
+        width: 90%;
+    }
+}
