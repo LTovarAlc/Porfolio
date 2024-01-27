@@ -3,3 +3,10 @@
     height: 100%;
     overflow-y: scroll;
 }
+
+@media screen and (max-width: 430px) {
+    .about{
+        height: 60%;
+        width: 100%;
+    }
+}

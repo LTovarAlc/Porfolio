@@ -96,3 +96,15 @@ textarea:focus{
 .footer{
     width: 70%;
 }
+
+@media screen and (max-width: 430px) {
+    .form__container{
+        height: 90%;
+    }
+    form{
+        height: 100%;
+    }
+    textarea{
+        margin-bottom: 20px;
+    }
+}

@@ -81,22 +81,30 @@
     width: 100%;
 }
 
-/* .skill-card {
-    overflow: hidden; 
-    position: relative;
-}
-
-.content {
-    white-space: nowrap; 
-    position: absolute;
-    animation: slide 10s linear infinite; 
-}
-
-@keyframes slide {
-    0% {
-        transform: translateX(0); 
+@media screen and (max-width: 430px){
+    .skills__container{
+        height: 47%;
+        justify-content: space-evenly;
     }
-    100% {
-        transform: translateX(-100%); 
+    .softSkills__container{
+        height: 47%;
     }
-} */
+    .skills__card-container{
+        width: 90%;
+        height: 85%;
+        display: grid;
+        gap: 10px;
+    }
+    .section__title{
+        margin-bottom: 15px;
+    }
+    .skill__card{
+        width: 90%;
+        height: 80%;
+        padding: 3px 0px;
+    }
+    .skill__Icon{
+        width: 20%;
+        padding: 0px 12px;
+    }
+}
