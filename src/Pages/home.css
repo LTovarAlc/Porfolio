@@ -42,6 +42,9 @@ body:hover #trailer{
 }
 
 @media screen and (max-width: 430px) {
+    body{
+        height: 100vh;
+    }
     .presentation-about__container{
         display: flex;
         flex-direction: column;
@@ -49,5 +52,8 @@ body:hover #trailer{
         height: 100vh;
         justify-content: center;
         align-items: center;
+    }
+    #trailer{
+        display: none;
     }
 }
