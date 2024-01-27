@@ -83,17 +83,20 @@
 
 @media screen and (max-width: 430px){
     .skills__container{
-        height: 47%;
+        height: 80%;
         justify-content: space-evenly;
     }
     .softSkills__container{
-        height: 47%;
+        display: none;
     }
     .skills__card-container{
         width: 90%;
-        height: 85%;
+        height: 100%;
         display: grid;
+        align-content: center;
         gap: 10px;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(5, 1fr);
     }
     .section__title{
         margin-bottom: 15px;
