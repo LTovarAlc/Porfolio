@@ -55,7 +55,7 @@ body:hover #trailer{
     }
 }
 
-@media screen and (min-width: 431px) and (max-width: 768px ){
+@media screen and (min-width: 431px) and (max-width: 1025px ){
     .presentation-about__container{
         display: flex;
         flex-direction: column;

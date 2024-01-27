@@ -11,7 +11,7 @@
     }
 }
 
-@media screen and (min-width: 431px) and (max-width: 768px) {
+@media screen and (min-width: 431px) and (max-width: 1028px) {
     .about{
         height: 60%;
         width: 90%;

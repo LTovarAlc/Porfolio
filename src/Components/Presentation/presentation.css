@@ -170,7 +170,7 @@
     }
 }
 
-@media screen and (min-width: 431px) and (max-width: 768px) {
+@media screen and (min-width: 431px) and (max-width: 1024px) {
     .presentation{
         height: 40%;
         width: 90%;
